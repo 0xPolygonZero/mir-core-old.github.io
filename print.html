@@ -137,9 +137,19 @@
                 <div id="content" class="content">
                     <main>
                         <p><strong>Mir</strong> is a protocol for <strong>mapping existing identifiers</strong>, like social media accounts, email addresses, URLs, and names, to sets of public keys, and for <strong>recovering from the loss or theft of private keys</strong>.</p>
-<p>More simply, Mir allows anyone to use cryptographic keys more easily, more securely, and without risking the loss of the ability to communicate, authenticate, or transact due to key loss.</p>
+<p>More simply, Mir allows anyone to use cryptographic keys more easily, more securely, and without risking the loss of the ability to communicate, transact, or authenticate due to key loss.</p>
 <p>Further, Mir allows users to <a href="https://www.google.com">escape</a> walled gardens, by allowing identifiers to be used independently of their originating services. For example, consider a hypothetical social network: MugTome. Mir would allow users to create and distribute posts to their existing networks, authenticated with their MugTome accounts, without ever touching MugTome servers.</p>
 <p>Mir's goal is an Internet that is more secure, more equitable, and more free.</p>
+<a class="header" href="#what-is-mir" id="what-is-mir"><h1>What is Mir?</h1></a>
+<p>Mir stands for Peer-to-Peer Identification and Recovery, and is a protocol that maintains mappings between existing, human-understandable identifiers, like social media accounts, email addresses, URLs, and names, to recoverable addresses. Addresses are then mapped to sets of public keys, so that keypairs can be used to create and authenticate data as belonging to an identifier.</p>
+<p>Mir focuses on supporting all namespaces, rather than on creating a new one. Mir also supports verifiable recovery of addresses, even in the event that all of a user's devices and backup keys are lost or destroyed.</p>
+<p>Mir is maintained by a network of nodes that arrive at consensus about the state of the above mappings. Anyone can run a node in Mir, and Mir's efficient data structures allow for short proofs that can be used on mobile and space- and bandwidth-limited devices.</p>
+<p>Mir represents an improvement over previous solutions. It's peer-to-peer and censorship-resistant, supports verifiable and flexible address recovery schemes, and </p>
+<a class="header" href="#why-mir" id="why-mir"><h1>Why Mir?</h1></a>
+<a class="header" href="#mir-in-detail" id="mir-in-detail"><h1>Mir in Detail</h1></a>
+<p>Addresses are deterministically created by hashing the combination of an initial set of public keys, and a <strong>cryptographic will</strong>, an encoding of the conditions under which an address can be updated, recovered, or revoked. Every state of the address is therefore chained to its initial value, and mapping the address to a malicious state without satisfying a cryptographic will at some point in the chain implies finding a collision in the hash function.</p>
+<a class="header" href="#applications-of-mir" id="applications-of-mir"><h1>Applications of Mir</h1></a>
+<a class="header" href="#faq" id="faq"><h1>FAQ</h1></a>
 
                     </main>
 
