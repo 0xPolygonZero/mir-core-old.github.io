@@ -65,6 +65,7 @@ a > .hljs {
 
 #print-button {
     margin: 0 15px;
+    display: none;
 }
 
 html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-container {
@@ -80,7 +81,8 @@ html:not(.sidebar-visible) #menu-bar:not(:hover).folded > #menu-bar-sticky-conta
 }
 
 .menu-title {
-    display: inline-block;
+    /* display: inline-block; */
+    display: none;
     font-weight: 200;
     font-size: 20px;
     line-height: 50px;
