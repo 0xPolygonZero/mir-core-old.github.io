@@ -141,4 +141,13 @@ blockquote {
 .tooltipped .tooltiptext {
     visibility: visible;
 }
+
+/* bpfarmer update */
+#theme-toggle {
+  display: none;
+}
+
+#search-toggle {
+  display: none;
+}
   
