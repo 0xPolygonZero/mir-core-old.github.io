@@ -72,7 +72,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="why.html"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="related.html"><strong aria-hidden="true">3.1.</strong> Related Work</a></li></ol></li><li><a href="protocol.html"><strong aria-hidden="true">4.</strong> Mir in Detail</a></li><li><a href="applications.html"><strong aria-hidden="true">5.</strong> Applications</a></li><li><a href="faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
+            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="why.html"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="why/related.html"><strong aria-hidden="true">3.1.</strong> Related Work</a></li></ol></li><li><a href="protocol.html"><strong aria-hidden="true">4.</strong> Mir in Detail</a></li><li><ol class="section"><li><a href="protocol/architecture.html"><strong aria-hidden="true">4.1.</strong> Architecture</a></li><li><a href="protocol/address.html"><strong aria-hidden="true">4.2.</strong> Address Structure</a></li><li><ol class="section"><li><a href="protocol/cryptographic_wills.html"><strong aria-hidden="true">4.2.1.</strong> Cryptographic Wills</a></li><li><a href="protocol/delegation.html"><strong aria-hidden="true">4.2.2.</strong> Delegation and State</a></li></ol></li><li><a href="protocol/identifier.html"><strong aria-hidden="true">4.3.</strong> Identifier Structure</a></li><li><ol class="section"><li><a href="protocol/contextual_proofs.html"><strong aria-hidden="true">4.3.1.</strong> Contextual Proofs</a></li><li><a href="protocol/zk_address_mapping.html"><strong aria-hidden="true">4.3.2.</strong> ZK Address Mapping</a></li></ol></li><li><a href="protocol/transition.html"><strong aria-hidden="true">4.4.</strong> State Transition</a></li><li><a href="protocol/consensus.html"><strong aria-hidden="true">4.5.</strong> Consensus</a></li><li><a href="protocol/usage.html"><strong aria-hidden="true">4.6.</strong> Usage</a></li><li><a href="protocol/further_improvements.html"><strong aria-hidden="true">4.7.</strong> Further Improvements</a></li></ol></li><li><a href="applications.html"><strong aria-hidden="true">5.</strong> Applications</a></li><li><ol class="section"><li><a href="applications/authentication.html"><strong aria-hidden="true">5.1.</strong> Authentication</a></li><li><a href="applications/transaction.html"><strong aria-hidden="true">5.2.</strong> Transaction</a></li><li><a href="applications/communication.html"><strong aria-hidden="true">5.3.</strong> Communication</a></li><li><a href="applications/walled.html"><strong aria-hidden="true">5.4.</strong> Walled Gardens</a></li></ol></li><li><a href="faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -139,26 +139,68 @@
                         <a class="header" href="#introducing-mir" id="introducing-mir"><h1>Introducing Mir</h1></a>
 <p><strong>Mir</strong> is a protocol for <strong>mapping existing identifiers</strong>, like social media accounts, email addresses, and names, to sets of public keys, and for <strong>recovering from the loss or theft of private keys</strong>.</p>
 <p>More simply, Mir allows anyone to use cryptographic keys more easily and more securely, for things like authentication, payments, and private communication.</p>
-<p>Further, Mir allows users to <a href="https://www.google.com">escape</a> walled gardens, by allowing identifiers to be used independently of their originating services. For example, consider the hypothetical social network: MugTome. Mir would allow users to create and distribute posts to their existing networks, authenticated under their MugTome identifiers, without ever touching MugTome servers.</p>
+<p>Further, Mir allows users to <a href="./applications/walled.html">escape</a> walled gardens, by allowing identifiers to be used independently of their originating services. For example, consider the hypothetical social network: MugTome. Mir would allow users to create and distribute posts to their existing networks, authenticated under their MugTome identifiers, without ever touching MugTome servers.</p>
 <p>Mir's goal is an Internet that is more secure, more equitable, and more free.</p>
 <a class="header" href="#what-is-mir" id="what-is-mir"><h1>What is Mir?</h1></a>
 <p>Mir is short for <strong>Peer-to-Peer Identification and Recovery</strong>, and is a protocol that maps existing, human-understandable identifiers, like social media accounts, email addresses, URLs, and names, to addresses that point to sets of public keys.</p>
 <p>Users can therefore verify and reason about keys based on the semantic properties of an identifier, rather than a public key fingerprint. For example, a user could send an encrypted message or cryptocurrency directly to an email contact, rather than to a Base 58 encoded string.</p>
-<p>Addresses are <a href="https://www.google.com">verifiably recoverable</a>, solving the &quot;lose key material, lose access to everything&quot; problem. Even if all of their devices and backup keys are lost, users can recover their addresses. Further, even if the entire Mir network is compromised by an attacker, addresses are resistant to malicious key bindings.</p>
+<p>Addresses are <a href="./protocol/address.html">verifiably recoverable</a>, solving the &quot;lose key material, lose access to everything&quot; problem. Even if all of their devices and backup keys are lost, users can recover their addresses. Further, even if the entire Mir network is compromised by an attacker, addresses are resistant to malicious key bindings.</p>
 <p>Mir is maintained by a network of nodes that arrive at consensus about the state of the above mappings. Anyone can run a node in Mir, and Mir's efficient data structures allow for succinct proofs that can be used on mobile and space- and bandwidth-limited devices. Mir is censorship-resistant: anyone can register an address, and anyone can map an identifier to an address.</p>
-<p>Some <a href="https://www.google.com">applications</a> of Mir are: improved password-replacement authentication schemes, cryptocurrencies that are usable by everyone, encrypted communication that resists MITM attacks, and alternatives to walled gardens: clients and applications with different incentives, built on the same identifiers.</p>
+<p>Some <a href="./applications.html">applications</a> of Mir are: improved password-replacement authentication schemes, cryptocurrencies that are usable by everyone, encrypted communication that resists MITM attacks, and alternatives to walled gardens: clients and applications with different incentives, built on the same identifiers.</p>
 <a class="header" href="#why-mir" id="why-mir"><h1>Why Mir?</h1></a>
-<p>Centralized providers control how people transact, authenticate, and communicate on the Internet.</p>
-<p>This is bad: single points of failure are <strong>vulnerable to breaches</strong>; divergent incentives lead to <strong>coercion and loss of privacy</strong>; and lock-in due to network effects allows providers to force <strong>monolithic interfaces and algorithms</strong> on all users.</p>
-<p>Cryptographic protocols offer an alternative: more security, privacy, and choice, but with reduced usability. Losing key material means the loss of funds and of the ability to authenticate and communicate. Further, key verification is unusable for most users [<a href="http://google.com">1</a>,<a href="http://google.com">2</a>], and there's no way to verifiably link existing identifiers to keypairs.</p>
-<p>A solution to these problems is necessary to reach parity with existing providers. Such a solution should be peer-to-peer: censorship-resistant and designed so that <strong>its incentives would necessarily be the incentives of its users</strong>.</p>
+<p>A small group of providers controls how Internet users communicate, transact, and authenticate. This is bad: single points of failure are vulnerable to breaches; divergent incentives lead to coercion, addiction, and loss of privacy; and network-effect lock-in allows providers to force monolithic interfaces and algorithms on their users.</p>
+<p>Cryptographic protocols offer an alternative to incumbent services, with greater security, privacy, and choice, but reduced usability. Key verification and management are difficult [<a href="http://cacr.uwaterloo.ca/techreports/2015/cacr2015-02.pdf">1</a>,<a href="https://arxiv.org/pdf/1802.04351.pdf">2</a>], and there's no way to verifiably link keypairs with existing identifiers. More critically, losing key material means the loss of funds and of the ability to authenticate and communicate.</p>
+<p>A solution is necessary to reach parity with existing services. Such a solution should be peer-to-peer: censorship-resistant and designed so that <strong>its incentives would necessarily be the incentives of its users</strong>.</p>
 <p>It should solve the problem of key loss and allow users to resume access, even if all of their devices and backup keys were lost.</p>
 <p>It should be capable of uniquely associating existing identifiers with sets of public keys, so that these identifiers could be used to verify public keys and authenticate data.</p>
 <p>It should protect the validity of key bindings, even in the case that all other nodes were controlled by an attacker.</p>
 <p>Finally, it should support succinct proofs, allowing use on mobile phones and space- and bandwidth-limited devices.</p>
+<p>CA's, CONIKS, Keybase, Namecoin, Blockstack, ENS</p>
 <a class="header" href="#protocol-overview" id="protocol-overview"><h1>Protocol Overview</h1></a>
+<p>Mir is a peer-to-peer protocol where anyone can run a node and participate in maintaining two data structures: the <strong>address tree</strong> and the <strong>identifier tree</strong>. This section will discuss the protocol details and is organized as follow:</p>
+<ul>
+<li>
+<p><a href="./protocol/architecture.html">Architecture</a> gives an overview of the data structures and participation models.</p>
+</li>
+<li>
+<p><a href="./protocol/address.html">Address Structure</a> concerns how addresses are registered, represented, and used.</p>
+<ul>
+<li><a href="./protocol/cryptographic_wills.html">Cryptographic Wills</a> discusses verifiable address recovery.</li>
+<li><a href="./protocol/delegation.html">Delegation and State</a> examines strategies to improve performance in Mir.</li>
+</ul>
+</li>
+<li>
+<p><a href="./protocol/identifier.html">Identifier Structure</a> shows how identifiers are mapped to keys through addresses.</p>
+<ul>
+<li><a href="./protocol/contextual_proofs.html">Contextual Proofs</a> gives examples of mapping different types of identifiers</li>
+<li><a href="./protocol/zk_address_mapping.html">ZK Address Mapping</a> discusses mapping identifiers while maintaining privacy.</li>
+</ul>
+</li>
+<li>
+<p><a href="./protocol/state_transitions.html">State Transitions</a> gives the rules for updating state.</p>
+</li>
+<li>
+<p><a href="./protocol/consensus.html">Consensus</a> discusses possible consensus protocols, sybil resistance and incentives.</p>
+</li>
+<li>
+<p><a href="./protocol/usage.html">Usage</a> traces a cycle of using Mir in practice.</p>
+</li>
+<li>
+<p><a href="./protocol/further_improvements">Further Improvements</a> targets goals for future improvements to Mir.</p>
+</li>
+</ul>
 <p>Addresses are deterministically created by hashing the combination of an initial set of public keys, and a <strong>cryptographic will</strong>, an encoding of the conditions under which an address can be updated, recovered, or revoked. Every state of the address is therefore chained to its initial value, and mapping the address to a malicious state without satisfying a cryptographic will at some point in the chain implies finding a collision in the hash function.</p>
+<a class="header" href="#cryptographic-wills" id="cryptographic-wills"><h1>Cryptographic Wills</h1></a>
+<a class="header" href="#identifier-structure" id="identifier-structure"><h1>Identifier Structure</h1></a>
+<a class="header" href="#contextual-proofs" id="contextual-proofs"><h1>Contextual Proofs</h1></a>
+<a class="header" href="#zk-address-mapping" id="zk-address-mapping"><h1>ZK Address Mapping</h1></a>
+<p>Describe mapping from identifier to address in ZK.</p>
+<a class="header" href="#state-transitions" id="state-transitions"><h1>State Transitions</h1></a>
 <a class="header" href="#applications-of-mir" id="applications-of-mir"><h1>Applications of Mir</h1></a>
+<a class="header" href="#authentication" id="authentication"><h1>Authentication</h1></a>
+<a class="header" href="#transaction" id="transaction"><h1>Transaction</h1></a>
+<a class="header" href="#communication" id="communication"><h1>Communication</h1></a>
+<a class="header" href="#walled-gardens" id="walled-gardens"><h1>Walled Gardens</h1></a>
 <a class="header" href="#faq" id="faq"><h1>FAQ</h1></a>
 
                     </main>

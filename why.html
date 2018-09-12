@@ -72,7 +72,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="why.html" class="active"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="related.html"><strong aria-hidden="true">3.1.</strong> Related Work</a></li></ol></li><li><a href="protocol.html"><strong aria-hidden="true">4.</strong> Mir in Detail</a></li><li><a href="applications.html"><strong aria-hidden="true">5.</strong> Applications</a></li><li><a href="faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
+            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="why.html" class="active"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="why/related.html"><strong aria-hidden="true">3.1.</strong> Related Work</a></li></ol></li><li><a href="protocol.html"><strong aria-hidden="true">4.</strong> Mir in Detail</a></li><li><ol class="section"><li><a href="protocol/architecture.html"><strong aria-hidden="true">4.1.</strong> Architecture</a></li><li><a href="protocol/address.html"><strong aria-hidden="true">4.2.</strong> Address Structure</a></li><li><ol class="section"><li><a href="protocol/cryptographic_wills.html"><strong aria-hidden="true">4.2.1.</strong> Cryptographic Wills</a></li><li><a href="protocol/delegation.html"><strong aria-hidden="true">4.2.2.</strong> Delegation and State</a></li></ol></li><li><a href="protocol/identifier.html"><strong aria-hidden="true">4.3.</strong> Identifier Structure</a></li><li><ol class="section"><li><a href="protocol/contextual_proofs.html"><strong aria-hidden="true">4.3.1.</strong> Contextual Proofs</a></li><li><a href="protocol/zk_address_mapping.html"><strong aria-hidden="true">4.3.2.</strong> ZK Address Mapping</a></li></ol></li><li><a href="protocol/transition.html"><strong aria-hidden="true">4.4.</strong> State Transition</a></li><li><a href="protocol/consensus.html"><strong aria-hidden="true">4.5.</strong> Consensus</a></li><li><a href="protocol/usage.html"><strong aria-hidden="true">4.6.</strong> Usage</a></li><li><a href="protocol/further_improvements.html"><strong aria-hidden="true">4.7.</strong> Further Improvements</a></li></ol></li><li><a href="applications.html"><strong aria-hidden="true">5.</strong> Applications</a></li><li><ol class="section"><li><a href="applications/authentication.html"><strong aria-hidden="true">5.1.</strong> Authentication</a></li><li><a href="applications/transaction.html"><strong aria-hidden="true">5.2.</strong> Transaction</a></li><li><a href="applications/communication.html"><strong aria-hidden="true">5.3.</strong> Communication</a></li><li><a href="applications/walled.html"><strong aria-hidden="true">5.4.</strong> Walled Gardens</a></li></ol></li><li><a href="faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -137,10 +137,9 @@
                 <div id="content" class="content">
                     <main>
                         <a class="header" href="#why-mir" id="why-mir"><h1>Why Mir?</h1></a>
-<p>Centralized providers control how people transact, authenticate, and communicate on the Internet.</p>
-<p>This is bad: single points of failure are <strong>vulnerable to breaches</strong>; divergent incentives lead to <strong>coercion and loss of privacy</strong>; and lock-in due to network effects allows providers to force <strong>monolithic interfaces and algorithms</strong> on all users.</p>
-<p>Cryptographic protocols offer an alternative: more security, privacy, and choice, but with reduced usability. Losing key material means the loss of funds and of the ability to authenticate and communicate. Further, key verification is unusable for most users [<a href="http://google.com">1</a>,<a href="http://google.com">2</a>], and there's no way to verifiably link existing identifiers to keypairs.</p>
-<p>A solution to these problems is necessary to reach parity with existing providers. Such a solution should be peer-to-peer: censorship-resistant and designed so that <strong>its incentives would necessarily be the incentives of its users</strong>.</p>
+<p>A small group of providers controls how Internet users communicate, transact, and authenticate. This is bad: single points of failure are vulnerable to breaches; divergent incentives lead to coercion, addiction, and loss of privacy; and network-effect lock-in allows providers to force monolithic interfaces and algorithms on their users.</p>
+<p>Cryptographic protocols offer an alternative to incumbent services, with greater security, privacy, and choice, but reduced usability. Key verification and management are difficult [<a href="http://cacr.uwaterloo.ca/techreports/2015/cacr2015-02.pdf">1</a>,<a href="https://arxiv.org/pdf/1802.04351.pdf">2</a>], and there's no way to verifiably link keypairs with existing identifiers. More critically, losing key material means the loss of funds and of the ability to authenticate and communicate.</p>
+<p>A solution is necessary to reach parity with existing services. Such a solution should be peer-to-peer: censorship-resistant and designed so that <strong>its incentives would necessarily be the incentives of its users</strong>.</p>
 <p>It should solve the problem of key loss and allow users to resume access, even if all of their devices and backup keys were lost.</p>
 <p>It should be capable of uniquely associating existing identifiers with sets of public keys, so that these identifiers could be used to verify public keys and authenticate data.</p>
 <p>It should protect the validity of key bindings, even in the case that all other nodes were controlled by an attacker.</p>
@@ -157,7 +156,7 @@
                         
 
                         
-                            <a rel="next" href="related.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="why/related.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -175,7 +174,7 @@
                 
 
                 
-                    <a href="related.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a href="why/related.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 
