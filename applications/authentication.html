@@ -87,7 +87,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="../description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="../why.html"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="../why/criteria.html"><strong aria-hidden="true">3.1.</strong> Desired Properties</a></li><li><a href="../why/related.html"><strong aria-hidden="true">3.2.</strong> Related Work</a></li><li><a href="../why/advantages.html"><strong aria-hidden="true">3.3.</strong> Advantages of Mir</a></li></ol></li><li><a href="../protocol.html"><strong aria-hidden="true">4.</strong> Mir Protocol</a></li><li><ol class="section"><li><a href="../protocol/architecture.html"><strong aria-hidden="true">4.1.</strong> Architecture</a></li><li><a href="../protocol/address.html"><strong aria-hidden="true">4.2.</strong> Address Structure</a></li><li><ol class="section"><li><a href="../protocol/cryptographic_wills.html"><strong aria-hidden="true">4.2.1.</strong> Cryptographic Wills</a></li><li><a href="../protocol/format.html"><strong aria-hidden="true">4.2.2.</strong> Implementation</a></li><li><a href="../protocol/delegation.html"><strong aria-hidden="true">4.2.3.</strong> Untrusted Delegation</a></li></ol></li><li><a href="../protocol/identifier.html"><strong aria-hidden="true">4.3.</strong> Identifier Structure</a></li><li><ol class="section"><li><a href="../protocol/identity.html"><strong aria-hidden="true">4.3.1.</strong> Proofs of Identity</a></li><li><a href="../protocol/zk_address_mapping.html"><strong aria-hidden="true">4.3.2.</strong> ZK Address Mapping</a></li></ol></li><li><a href="../protocol/validation.html"><strong aria-hidden="true">4.4.</strong> Validation</a></li><li><a href="../protocol/consensus.html"><strong aria-hidden="true">4.5.</strong> Consensus</a></li><li><a href="../protocol/security.html"><strong aria-hidden="true">4.6.</strong> Security</a></li><li><a href="../protocol/further_work.html"><strong aria-hidden="true">4.7.</strong> Further Work</a></li></ol></li><li><a href="../applications.html"><strong aria-hidden="true">5.</strong> Applications</a></li><li><ol class="section"><li><a href="../applications/authentication.html" class="active"><strong aria-hidden="true">5.1.</strong> Authentication</a></li><li><a href="../applications/transaction.html"><strong aria-hidden="true">5.2.</strong> Transaction</a></li><li><a href="../applications/communication.html"><strong aria-hidden="true">5.3.</strong> Communication</a></li><li><a href="../applications/walled.html"><strong aria-hidden="true">5.4.</strong> Breaking Network Effects</a></li></ol></li><li><a href="../faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="../organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
+            <ol class="chapter"><li><a href="../introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="../description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="../why.html"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="../why/criteria.html"><strong aria-hidden="true">3.1.</strong> Desired Properties</a></li><li><a href="../why/related.html"><strong aria-hidden="true">3.2.</strong> Related Work</a></li><li><a href="../why/advantages.html"><strong aria-hidden="true">3.3.</strong> Advantages of Mir</a></li></ol></li><li><a href="../protocol.html"><strong aria-hidden="true">4.</strong> Mir Protocol</a></li><li><ol class="section"><li><a href="../protocol/architecture.html"><strong aria-hidden="true">4.1.</strong> Architecture</a></li><li><a href="../protocol/address.html"><strong aria-hidden="true">4.2.</strong> Address Structure</a></li><li><ol class="section"><li><a href="../protocol/cryptographic_wills.html"><strong aria-hidden="true">4.2.1.</strong> Cryptographic Wills</a></li><li><a href="../protocol/format.html"><strong aria-hidden="true">4.2.2.</strong> Implementation</a></li><li><a href="../protocol/delegation.html"><strong aria-hidden="true">4.2.3.</strong> Untrusted Delegation</a></li></ol></li><li><a href="../protocol/identifier.html"><strong aria-hidden="true">4.3.</strong> Identifier Structure</a></li><li><ol class="section"><li><a href="../protocol/identity.html"><strong aria-hidden="true">4.3.1.</strong> Proofs of Identity</a></li><li><a href="../protocol/zk_address_mapping.html"><strong aria-hidden="true">4.3.2.</strong> ZK Address Mapping</a></li></ol></li><li><a href="../protocol/validation.html"><strong aria-hidden="true">4.4.</strong> Validation</a></li><li><a href="../protocol/consensus.html"><strong aria-hidden="true">4.5.</strong> Consensus</a></li><li><a href="../protocol/security.html"><strong aria-hidden="true">4.6.</strong> Security</a></li><li><a href="../protocol/further_work.html"><strong aria-hidden="true">4.7.</strong> Further Work</a></li></ol></li><li><a href="../applications.html"><strong aria-hidden="true">5.</strong> Usage and Applications</a></li><li><ol class="section"><li><a href="../applications/authentication.html" class="active"><strong aria-hidden="true">5.1.</strong> Authentication</a></li><li><a href="../applications/transaction.html"><strong aria-hidden="true">5.2.</strong> Transaction</a></li><li><a href="../applications/communication.html"><strong aria-hidden="true">5.3.</strong> Communication</a></li><li><a href="../applications/walled.html"><strong aria-hidden="true">5.4.</strong> Breaking Network Effects</a></li></ol></li><li><a href="../faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="../organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -152,6 +152,39 @@
                 <div id="content" class="content">
                     <main>
                         <a class="header" href="#authentication" id="authentication"><h1>Authentication</h1></a>
+<a class="header" href="#registration-and-login" id="registration-and-login"><h3>Registration and Login</h3></a>
+<p>A user with address \(A\) and mapped identifier \(I\) could register for or log into an external service with either just an address or an identifier. In the case of just an address, recall that \(A:V\) is a binding where for cryptographic hash function \(H\), a merkle root of a set of keys \(K\), and cryptographic will \(C\), \(V = H(K || V' || C)\). A user could send a randomly-generated nonce to a site, receive a signed token deterministically generated using that nonce, and need to provide the following data:</p>
+<ul>
+<li>
+<p>A succinct, non-interactive proof that shows that the state transition \(A \to V \) is the composition of valid state transitions at each \(V_n\) according to the cryptographic wills \(C_n\).</p>
+</li>
+<li>
+<p>A proof of inclusion of \(A:V\) in the address tree.</p>
+</li>
+<li>
+<p>For a key \(k\) on a device, a proof of inclusion \(k \in K \).</p>
+</li>
+<li>
+<p>Optionally, a succinct, non-interactive proof that the address tree root is valid, if the service doesn't run a light node.</p>
+</li>
+<li>
+<p>A signature of some provided token generated with \(k\)</p>
+</li>
+</ul>
+<p>This might seem complicated, but is actually far simpler than requiring a network request to another service, as in OAuth, and provides a stronger guarantee of consistency: it's much harder to maliciously alter the secret that's used for authentication, and much easier to detect malicious alteration.</p>
+<p>In the case of registering with an identifier \(I\), a user would need to provide the above data, as well as:</p>
+<ul>
+<li>
+<p>A proof of inclusion of \(I:H(l:p:A\) in the identifier tree, for counter \(l\) and proof/pointer \(p\).</p>
+</li>
+<li>
+<p>Optionally, a succinct, non-interactive proof that the identifier tree root is valid.</p>
+</li>
+<li>
+<p>A cryptographic proof that \(p\) is valid if \(I\) is a strongly-verifiable identifier, otherwise a pointer to a weakly-verifiable proof of identity.</p>
+</li>
+</ul>
+<a class="header" href="#zk-signatures" id="zk-signatures"><h3>ZK Signatures</h3></a>
 
                     </main>
 

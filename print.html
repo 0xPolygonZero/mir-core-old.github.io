@@ -87,7 +87,7 @@
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="why.html"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="why/criteria.html"><strong aria-hidden="true">3.1.</strong> Desired Properties</a></li><li><a href="why/related.html"><strong aria-hidden="true">3.2.</strong> Related Work</a></li><li><a href="why/advantages.html"><strong aria-hidden="true">3.3.</strong> Advantages of Mir</a></li></ol></li><li><a href="protocol.html"><strong aria-hidden="true">4.</strong> Mir Protocol</a></li><li><ol class="section"><li><a href="protocol/architecture.html"><strong aria-hidden="true">4.1.</strong> Architecture</a></li><li><a href="protocol/address.html"><strong aria-hidden="true">4.2.</strong> Address Structure</a></li><li><ol class="section"><li><a href="protocol/cryptographic_wills.html"><strong aria-hidden="true">4.2.1.</strong> Cryptographic Wills</a></li><li><a href="protocol/format.html"><strong aria-hidden="true">4.2.2.</strong> Implementation</a></li><li><a href="protocol/delegation.html"><strong aria-hidden="true">4.2.3.</strong> Untrusted Delegation</a></li></ol></li><li><a href="protocol/identifier.html"><strong aria-hidden="true">4.3.</strong> Identifier Structure</a></li><li><ol class="section"><li><a href="protocol/identity.html"><strong aria-hidden="true">4.3.1.</strong> Proofs of Identity</a></li><li><a href="protocol/zk_address_mapping.html"><strong aria-hidden="true">4.3.2.</strong> ZK Address Mapping</a></li></ol></li><li><a href="protocol/validation.html"><strong aria-hidden="true">4.4.</strong> Validation</a></li><li><a href="protocol/consensus.html"><strong aria-hidden="true">4.5.</strong> Consensus</a></li><li><a href="protocol/security.html"><strong aria-hidden="true">4.6.</strong> Security</a></li><li><a href="protocol/further_work.html"><strong aria-hidden="true">4.7.</strong> Further Work</a></li></ol></li><li><a href="applications.html"><strong aria-hidden="true">5.</strong> Applications</a></li><li><ol class="section"><li><a href="applications/authentication.html"><strong aria-hidden="true">5.1.</strong> Authentication</a></li><li><a href="applications/transaction.html"><strong aria-hidden="true">5.2.</strong> Transaction</a></li><li><a href="applications/communication.html"><strong aria-hidden="true">5.3.</strong> Communication</a></li><li><a href="applications/walled.html"><strong aria-hidden="true">5.4.</strong> Breaking Network Effects</a></li></ol></li><li><a href="faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
+            <ol class="chapter"><li><a href="introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><a href="description.html"><strong aria-hidden="true">2.</strong> What is Mir?</a></li><li><a href="why.html"><strong aria-hidden="true">3.</strong> Why Mir?</a></li><li><ol class="section"><li><a href="why/criteria.html"><strong aria-hidden="true">3.1.</strong> Desired Properties</a></li><li><a href="why/related.html"><strong aria-hidden="true">3.2.</strong> Related Work</a></li><li><a href="why/advantages.html"><strong aria-hidden="true">3.3.</strong> Advantages of Mir</a></li></ol></li><li><a href="protocol.html"><strong aria-hidden="true">4.</strong> Mir Protocol</a></li><li><ol class="section"><li><a href="protocol/architecture.html"><strong aria-hidden="true">4.1.</strong> Architecture</a></li><li><a href="protocol/address.html"><strong aria-hidden="true">4.2.</strong> Address Structure</a></li><li><ol class="section"><li><a href="protocol/cryptographic_wills.html"><strong aria-hidden="true">4.2.1.</strong> Cryptographic Wills</a></li><li><a href="protocol/format.html"><strong aria-hidden="true">4.2.2.</strong> Implementation</a></li><li><a href="protocol/delegation.html"><strong aria-hidden="true">4.2.3.</strong> Untrusted Delegation</a></li></ol></li><li><a href="protocol/identifier.html"><strong aria-hidden="true">4.3.</strong> Identifier Structure</a></li><li><ol class="section"><li><a href="protocol/identity.html"><strong aria-hidden="true">4.3.1.</strong> Proofs of Identity</a></li><li><a href="protocol/zk_address_mapping.html"><strong aria-hidden="true">4.3.2.</strong> ZK Address Mapping</a></li></ol></li><li><a href="protocol/validation.html"><strong aria-hidden="true">4.4.</strong> Validation</a></li><li><a href="protocol/consensus.html"><strong aria-hidden="true">4.5.</strong> Consensus</a></li><li><a href="protocol/security.html"><strong aria-hidden="true">4.6.</strong> Security</a></li><li><a href="protocol/further_work.html"><strong aria-hidden="true">4.7.</strong> Further Work</a></li></ol></li><li><a href="applications.html"><strong aria-hidden="true">5.</strong> Usage and Applications</a></li><li><ol class="section"><li><a href="applications/authentication.html"><strong aria-hidden="true">5.1.</strong> Authentication</a></li><li><a href="applications/transaction.html"><strong aria-hidden="true">5.2.</strong> Transaction</a></li><li><a href="applications/communication.html"><strong aria-hidden="true">5.3.</strong> Communication</a></li><li><a href="applications/walled.html"><strong aria-hidden="true">5.4.</strong> Breaking Network Effects</a></li></ol></li><li><a href="faq.html"><strong aria-hidden="true">6.</strong> FAQ</a></li><li><a href="organization.html"><strong aria-hidden="true">7.</strong> Organization</a></li></ol>
         </nav>
 
         <div id="page-wrapper" class="page-wrapper">
@@ -158,7 +158,7 @@
 <p>Mir's goal is an Internet that is more secure, more equitable, and more free.</p>
 <a class="header" href="#what-is-mir" id="what-is-mir"><h1>What is Mir?</h1></a>
 <p>Mir, short for <strong>Peer-to-Peer Identification and Recovery</strong>, is a protocol that maps existing, human-understandable identifiers, like social media accounts, email addresses, and URLs, to addresses that are bound to sets of public keys.</p>
-<p>Addresses are <a href="./protocol/cryptographic_wills.html">verifiably recoverable</a>: even if all of their devices and backup keys are lost, users can still recover the ability to authenticate. This solves a major problem in cryptographic protocols, that losing key material means the permanent loss of funds and the ability to send and receive messages. Further, even if the entire Mir network is compromised by an attacker, addresses are resistant to malicious key bindings.</p>
+<p>Addresses are <a href="./protocol/cryptographic_wills.html">verifiably recoverable</a>: even if all of their devices and backup keys are lost, users can still recover the ability to authenticate. This solves a major problem in cryptographic protocols, that losing key material means the permanent loss of funds and the ability to send and receive messages. Further, even if the entire Mir network is compromised by an attacker, addresses are resistant to malicious key bindings. Addresses are intended to be <em>stable</em>: remaining the same even if devices are added or removed.</p>
 <p>Provably associating identifiers with public keys allows key verification and lookup to occur implicitly. Users can reason about keys based on the semantic properties of an identifier, rather than a public key fingerprint. For example, a user could send an encrypted message or cryptocurrency directly to an email contact, rather than to a Base 58 encoded string. Likewise, she can trust an incoming encrypted message from a friend, without manually confirming a public key.</p>
 <p>Mir also provides consistency for a user's public key set: adding or removing a device and key pair doesn't require registering the change with all of a user's services or websites. This consistency property can be extended to arbitrary data: a user could commit to the state of a social networking profile, a desired email provider distinct from his email's domain, etc. Further, Mir provides efficient proofs that a key is valid, so an authentication protocol like OAuth could be replicated with a simple proof of inclusion, rather than a handshake with a third-party service.</p>
 <p>Anyone can run a node in Mir, and Mir provides succinct proofs that can be used on mobile and space- and bandwidth-limited devices. Mir is censorship-resistant: anyone can register an address, and anyone can map an identifier to an address. Some <a href="./applications.html">applications</a> of Mir are: improved password-replacement authentication schemes, cryptocurrencies that are usable by everyone, encrypted communication that resists MITM attacks, and &quot;forced disintermediation&quot;, the replacement of walled gardens, like social media services and email providers, with alternatives that promote different values, like an ad-free experience or a client designed to minimze time wasted, but rely on the same identifiers, networks, and data.</p>
@@ -275,12 +275,12 @@ $$ V_{n+1} = H(K' || V_{n} || C') $$ where \(K',C'\) are defined as above. This 
 <p>This scheme offers incentive alignment through deterrence: delegate services are disincentivized from misbehaving because it's easy for users to exit and switch delegates. Users can use untrusted delegation to update their address bindings at a lower cost, and to provide global state for things like the value of a user's social networking profile at a particular time, or a pointer to a user's messaging or email provider.</p>
 <a class="header" href="#identifier-structure" id="identifier-structure"><h1>Identifier Structure</h1></a>
 <p>A core design goal of Mir is allowing existing human-understandable identifiers to be verifiably mapped to unique addresses, without requiring cooperation from underlying services that issue those identifiers. Other systems like Keybase have demonstrated that this is possible: users can post publicly-verifiable proofs of identity on external services that point to names on another platform. However, the uniqueness property isn't efficiently verifiable. This is important, since an attacker could briefly compromise a user's social media account and edit a past post to be a proof of identity for a malicious address, which would be difficult to detect.</p>
-<p>Mir satisfies this condition with the following registration process. Let \( H:\{0,1\}^* \to \{0,1\}^{256} \) be a cryptographic hash function, let \(A\) be an address, and let \(i\) be a string that uniquely refers to an identifier (an email address, social media handle, etc). Let \( k = 0 \) be a counter. To register an identifier mapping on Mir, a user would first create a publicly-verifiable proof containing \( H( k || A) \). In Mir, namespaces are organized as domains and verification rules. Rules give the process for verifying a proof of identity, and distinguish between different identifiers that are located on the same domain, like email addresses and social media accounts. For a domain string \(d\) and hashed verification rules \(v\), the full path to a leaf containing identifier mapping is generated as $$ I = H(d || v || i), I:H(k || p || A)  $$ for a pointer, \(p\), to the proof containing \( H( k || A) \).</p>
+<p>Mir satisfies this condition with the following registration process. Let \( H:\{0,1\}^* \to \{0,1\}^{256} \) be a cryptographic hash function, let \(A\) be an address, and let \(i\) be a string that uniquely refers to an identifier (an email address, social media handle, etc). Let \( l = 0 \) be a counter. To register an identifier mapping on Mir, a user would first create a publicly-verifiable proof containing \( H( l || A) \). In Mir, namespaces are organized as domains and verification rules. Rules give the process for verifying a proof of identity, and distinguish between different identifiers that are located on the same domain, like email addresses and social media accounts. For a domain string \(d\) and hashed verification rules \(v\), the full path to a leaf containing identifier mapping is generated as $$ I = H(d || v || i), I:H(k || p || A)  $$ for a pointer, \(p\), to the proof containing \( H( l || A) \).</p>
 <p>Verifying a provided mapping consists of calculating the proof of inclusion in the identifier tree, and separately verifying the proof of identity according to the verification rules. This could entail accessing a social media post, verifying a DKIM signature, or verifying a CONIKS proof. It's important to note that the only validation of an identifier mapping consists of verifying that the counter is properly incremented and that any signature data exposed to the protocol, as in DKIM or CONIKS, is valid. This process allows false mappings from identifiers like social media accounts to be registered, though this isn't a critical security risk, since the protocol requires checking the validity of the external proof separately from the proof of inclusion. The problem is that external resources can be manipulated, or unavailable for legitimate as well as illegitimate reasons, so forcing validators to stake tokens and vote on the validity of every external resource could have a negative effect.</p>
 <p>Future work will examine how to mitigate this, possibly with some form of delegation and a challenge process, such that a user could delegate to a staked validator upon registration of an identifier mapping, and the validator's signature would be required on all subsequent updates. Users could challenge misbehaving validators, who would then lose their stake based on a vote. Another option would be to have a two-phase process, where an address would submit a transaction to prepare an identifier to be mapped, and another address could then pay tokens equal to the first address's transaction fee, multiplied by some factor, to challenge registration of an identifier mapping. This process would repeat, exponentially increasing the fee in a series of rounds, each lasting some number of blocks, until one party could no longer pay. The winning address would receive spent tokens back, less some fees, while the tokens belonging to the losing address would be burned. This is an imperfect process, but it at least makes spamming or vacuously registering identifiers unpredictably unprofitable, which should be a disincentive.</p>
 <a class="header" href="#proof-of-identity" id="proof-of-identity"><h1>Proof of Identity</h1></a>
 <p>Proofs of identity are statements used to prove that a particular identifier on an external service, like a social media account, email address, URL, etc. belongs to the owner of an address on Mir. We distinguish between two classes: <em>strongly-verifiable</em> and <em>weakly-verifiable</em> proofs of identity.</p>
-<p>Strongly-verifiable proofs of identity are statements that are authenticated such that an update to an identifier mapping can be cryptographically verified outside of the originating service. Examples of strongly-verifiable proofs are DKIM-signed messages, CONIKS proofs-of-inclusion, etc. These proofs can be validated entirely within Mir, but it's important to note that the strong condition doesn't imply that a particular mapping from an identifier to an address is necessarily up-to-date, only that it is more current than the current state of the mapping in Mir. For instance, a CONIKS log could have \(t\) epochs, but the registered mapping for an identifier could use a proof from epoch \(t-n\). Any valid proof-of-inclusion from \((t-n,t]\)) can be used to update the identifier mapping, even if it differs from the mapping at \(t\) (but obviously the mapping at \(t\)) will supersede all previous mappings). A solution to this issue is to simply construct a rule set such that the registrar of a namespace publishes CONIKS logs that consist of identifier:address mappings directly on Mir.</p>
+<p>Strongly-verifiable proofs of identity are statements that are authenticated such that an update to an identifier mapping can be cryptographically verified outside of the originating service. Examples of strongly-verifiable proofs are DKIM-signed messages, CONIKS proofs-of-inclusion, etc. These proofs can be validated entirely within Mir, but it's important to note that the strong condition doesn't imply that a particular mapping from an identifier to an address is necessarily up-to-date, only that it is more current than the current state of the mapping in Mir. For instance, a CONIKS log could have \(t\) epochs, but the registered mapping for an identifier could use a proof from epoch \(t-n\). Any valid proof-of-inclusion from \((t-n,t]\) can be used to update the identifier mapping, even if it differs from the mapping at \(t\) (but obviously the mapping at \(t\)) will supersede all previous mappings). A solution to this issue is to simply construct a rule set such that the registrar of a namespace publishes CONIKS logs that consist of identifier:address mappings directly on Mir.</p>
 <p>Weakly-verifiable proofs of identity are those that require accessing a third-party resource to verify. Counters prevent replay attacks, and the uniqueness of identifier:address mappings prevents an attacker from using a malicious proof of identity without detection. This is important, since otherwise, an attacker could temporarily compromise an external account, create a proof of identity that maps to a malicious address, and it would be difficult to detect. Examples of weakly-verifiable proofs are publicly-verifiable social media posts, DNS entries, etc.</p>
 <a class="header" href="#zk-address-mapping" id="zk-address-mapping"><h1>ZK Address Mapping</h1></a>
 <p><strong>Describe mapping from identifier to address in ZK, in order to prevent linking identifiers mapped to the same address.</strong></p>
@@ -292,12 +292,107 @@ $$ V_{n+1} = H(K' || V_{n} || C') $$ where \(K',C'\) are defined as above. This 
 <p><strong>Give proofs of protocol security, both of address bindings and of consensus guarantees.</strong></p>
 <a class="header" href="#further-work" id="further-work"><h1>Further Work</h1></a>
 <p><strong>Recursive SNARK verification, preventing vacuous identifier mappings, preventing identifier linkage, etc.</strong></p>
-<a class="header" href="#applications-of-mir" id="applications-of-mir"><h1>Applications of Mir</h1></a>
+<a class="header" href="#using-mir" id="using-mir"><h1>Using Mir</h1></a>
+<p>Mir improves the usability of cryptographic protocols by removing the need for users to manage and verify public keys. Protocols for authentication, communication, and payments can benefit from the recovery from key loss and the implicit retrieval and verification of public keys that Mir provides. The goal is to allow anyone to use decentralized services directly, without sacrificing the usability of existing, centralized services.</p>
+<p>On the other hand, Mir attacks a core problem of the modern Internet: the existence of walled gardens and lock-in due to network effects. Currently, most users depend on third parties like social media services and email providers to vouch for what is true. These intermediaries provide a valuable service by authenticating and relaying data between users, but also completely dictate their users' interfaces and experiences by preventing the use of alternative clients and leveraging network effects to keep their users locked-in.</p>
+<p>Fundamentally, the core value that service providers offer is the trust that data is authentic and consistent, since storage and message passing are essentially commodities on the modern Internet. Mir simply offers a way to guarantee this trust by authenticating data under a particular identifier, without the involvement of the service that issued the identifier. Further, users can use Mir to share globally-consistent state, allowing different users to consume the same data through different interfaces and experiences.</p>
+<p>This section examines in greater detail a few of the potential applications for Mir.</p>
+<ul>
+<li>
+<p><a href="./applications/authentication.html">Authentication</a> gives improved passwordless authentication schemes.</p>
+</li>
+<li>
+<p><a href="./applications/transaction.html">Transaction</a> details improved cryptocurrency and fiat models.</p>
+</li>
+<li>
+<p><a href="./applications/communication.html">Communication</a> describes more transparent messaging protocols that resist MITM attacks.</p>
+</li>
+<li>
+<p><a href="./applications/walled.html">Breaking Network Effects</a> shows how Mir could allow users to escape walled gardens.</p>
+</li>
+</ul>
 <a class="header" href="#authentication" id="authentication"><h1>Authentication</h1></a>
+<a class="header" href="#registration-and-login" id="registration-and-login"><h3>Registration and Login</h3></a>
+<p>A user with address \(A\) and mapped identifier \(I\) could register for or log into an external service with either just an address or an identifier. In the case of just an address, recall that \(A:V\) is a binding where for cryptographic hash function \(H\), a merkle root of a set of keys \(K\), and cryptographic will \(C\), \(V = H(K || V' || C)\). A user could send a randomly-generated nonce to a site, receive a signed token deterministically generated using that nonce, and need to provide the following data:</p>
+<ul>
+<li>
+<p>A succinct, non-interactive proof that shows that the state transition \(A \to V \) is the composition of valid state transitions at each \(V_n\) according to the cryptographic wills \(C_n\).</p>
+</li>
+<li>
+<p>A proof of inclusion of \(A:V\) in the address tree.</p>
+</li>
+<li>
+<p>For a key \(k\) on a device, a proof of inclusion \(k \in K \).</p>
+</li>
+<li>
+<p>Optionally, a succinct, non-interactive proof that the address tree root is valid, if the service doesn't run a light node.</p>
+</li>
+<li>
+<p>A signature of some provided token generated with \(k\)</p>
+</li>
+</ul>
+<p>This might seem complicated, but is actually far simpler than requiring a network request to another service, as in OAuth, and provides a stronger guarantee of consistency: it's much harder to maliciously alter the secret that's used for authentication, and much easier to detect malicious alteration.</p>
+<p>In the case of registering with an identifier \(I\), a user would need to provide the above data, as well as:</p>
+<ul>
+<li>
+<p>A proof of inclusion of \(I:H(l:p:A\) in the identifier tree, for counter \(l\) and proof/pointer \(p\).</p>
+</li>
+<li>
+<p>Optionally, a succinct, non-interactive proof that the identifier tree root is valid.</p>
+</li>
+<li>
+<p>A cryptographic proof that \(p\) is valid if \(I\) is a strongly-verifiable identifier, otherwise a pointer to a weakly-verifiable proof of identity.</p>
+</li>
+</ul>
+<a class="header" href="#zk-signatures" id="zk-signatures"><h3>ZK Signatures</h3></a>
 <a class="header" href="#transaction" id="transaction"><h1>Transaction</h1></a>
+<p><strong>Describe a cryptocurrency where address recovery was possible, sending funds to an identifier was easily supported, etc.</strong></p>
 <a class="header" href="#communication" id="communication"><h1>Communication</h1></a>
+<p><strong>Describe using a simple proof-of-inclusion to verify a key, prevent MITM attack, like CONIKS</strong></p>
 <a class="header" href="#breaking-network-effects" id="breaking-network-effects"><h1>Breaking Network Effects</h1></a>
+<a class="header" href="#authenticating-data-with-an-identifier" id="authenticating-data-with-an-identifier"><h3>Authenticating Data with an Identifier</h3></a>
+<p>Allowing users to keep their identifiers without requiring them to use the services that issue those identifiers is an important move forward in the development of the Internet. Even decentralized or federated services suffer from this problem: a user on a federated social network can't transport his identifier to a different instance than the one that issued it.</p>
+<p>A user with address \(A\) and mapped identifier \(I\) could authenticate some message \(m\), such that it could be verified by another party. Recall that \(A:V\) is a binding where for cryptographic hash function \(H\), a merkle root of a set of keys \(K\), and cryptographic will \(C\), \(V = H(K || V' || C)\). A user could generate \(m\), and then provide the verifier with:</p>
+<ul>
+<li>
+<p>A succinct, non-interactive proof that shows that the state transition \(A \to V \) is the composition of valid state transitions at each \(V_n\) according to the cryptographic wills \(C_n\).</p>
+</li>
+<li>
+<p>A proof of inclusion of \(A:V\) in the address tree at some block.</p>
+</li>
+<li>
+<p>For a key \(k\) on a device, a proof of inclusion \(k \in K \).</p>
+</li>
+<li>
+<p>A signature of some provided token generated with \(k\)</p>
+</li>
+<li>
+<p>A proof of inclusion of \(I:H(l:p:A\) in the identifier tree at some block, for counter \(l\) and proof/pointer \(p\).</p>
+</li>
+<li>
+<p>A cryptographic proof that \(p\) is valid if \(I\) is a strongly-verifiable identifier, otherwise a pointer to a weakly-verifiable proof of identity.</p>
+</li>
+<li>
+<p>A signature of \(m\) by \(k\).</p>
+</li>
+</ul>
+<p>Optionally, the verifier could request that the user provide a proof-of-inclusion in a later block for the address and identifier trees.</p>
+<a class="header" href="#sharing-globally-consistent-state" id="sharing-globally-consistent-state"><h3>Sharing Globally-Consistent State</h3></a>
+<p>Providing a globally-consistent view of some data is important for applications like social networking, where showing the latest state of a profile or feed is important. A user could prove to a verifier that some state parameter \(s = H(d)\) is the hashed value of some data by providing the following:</p>
+<ul>
+<li>
+<p>A succinct, non-interactive proof that shows that the state transition \(A \to V \) is the composition of valid state transitions at each \(V_n\) according to the cryptographic wills \(C_n\).</p>
+</li>
+<li>
+<p>A proof of inclusion of \(A:V\) in the address tree at some block.</p>
+</li>
+<li>
+<p>A proof-of-inclusion \(s \in K \).</p>
+</li>
+</ul>
 <a class="header" href="#faq" id="faq"><h1>FAQ</h1></a>
+<p><strong>Various questions about protocol operation, yes it's better than multisig!</strong></p>
+<p>Is PoS a better guarantee w/ recursive snarks?</p>
 
                     </main>
 
