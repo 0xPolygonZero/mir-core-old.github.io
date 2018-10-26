@@ -1,0 +1,5 @@
+[book]
+authors = ["Brendan Farmer"]
+multilingual = false
+src = "src"
+title = "Mir"
